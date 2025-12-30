@@ -1,0 +1,20 @@
+[
+    {
+        "domain": "google.com",
+        "expiry_date": "2026-02-25",
+        "days_remaining": 56,
+        "status": "HEALTHY"
+    },
+    {
+        "domain": "github.com",
+        "expiry_date": "2026-02-05",
+        "days_remaining": 37,
+        "status": "HEALTHY"
+    },
+    {
+        "domain": "dbs.com",
+        "expiry_date": "2026-03-27",
+        "days_remaining": 87,
+        "status": "HEALTHY"
+    }
+]

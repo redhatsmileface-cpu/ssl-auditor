@@ -1,0 +1,32 @@
+name: Weekly SSL Security Audit
+
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Every Sunday at midnight
+  workflow_dispatch: # Allows you to click "Run Workflow" manually
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+
+    - name: Run SSL Audit
+      run: python ssl_check.py
+
+    - name: Commit Audit Report
+      run: |
+        git config --global user.name "Security Bot"
+        git config --global user.email "bot@github.com"
+        git add security_audit.json
+        git commit -m "Update weekly SSL audit report [skip ci]" || echo "No changes"
+        git push
