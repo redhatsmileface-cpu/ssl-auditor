@@ -3,7 +3,7 @@ import ssl
 import datetime
 import json
 #Declare list of domains for audit
-DOMAINS=["google.com","github.com","dbs.com",]
+DOMAINS=["google.com","github.com","dbs.com","bing.com"]
 DAYS_THRESHOLD=30 # Alert if expiring within 30 days.
 OUTPUT_FILE="security_audit.json"
 
