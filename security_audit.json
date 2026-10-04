@@ -2,25 +2,25 @@
     {
         "domain": "google.com",
         "expiry_date": "2026-12-03",
-        "days_remaining": 67,
+        "days_remaining": 60,
         "status": "HEALTHY"
     },
     {
         "domain": "github.com",
         "expiry_date": "2026-11-29",
-        "days_remaining": 63,
+        "days_remaining": 56,
         "status": "HEALTHY"
     },
     {
         "domain": "dbs.com",
         "expiry_date": "2026-12-01",
-        "days_remaining": 65,
+        "days_remaining": 58,
         "status": "HEALTHY"
     },
     {
         "domain": "bing.com",
         "expiry_date": "2027-02-28",
-        "days_remaining": 154,
+        "days_remaining": 147,
         "status": "HEALTHY"
     }
 ]
